@@ -27,6 +27,7 @@ app.get('/project', (req,res)=>
 
    res.sendFile('./views/project.html',{root: __dirname});
           //res.send("adjkdn")
+          
     
 
 });
