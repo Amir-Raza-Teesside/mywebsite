@@ -2,8 +2,8 @@ const express = require('express')
 var path = require('path')
 
 app = express()
-port = process.env.port || 3000
-app.listen(port);
+
+app.listen(process.env.PORT || 3000);
 
 
 app.use(express.static('public'))
@@ -27,7 +27,7 @@ app.get('/project', (req,res)=>
 
    res.sendFile('./views/project.html',{root: __dirname});
           //res.send("adjkdn")
-          
+
     
 
 });
